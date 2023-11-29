@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filmoteka</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<h1>Filmoteka</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Filmovi</h2>
+
+			<div class="single-item">
+				<img src="img/poster1.jpg">
+				<div class="si-content">
+					<h3>Goodfellas</h3>
+					<p class="price">$25</p>
+				</div>
+				<div class="actions">
+					<span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+					<button onclick="addToCart(this)">Dodaj</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/poster2.jpg">
+				<div class="si-content">
+					<h3>Avengers</h3>
+					<p class="price">$20</p>
+				</div>
+				<div class="actions">
+					<span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+					<button onclick="addToCart(this)">Dodaj</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/poster3.jpg">
+				<div class="si-content">
+					<h3>Gone Girl</h3>
+					<p class="price">$35</p>
+				</div>
+				<div class="actions">
+					<span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+					<button onclick="addToCart(this)">Dodaj</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Korpa</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
